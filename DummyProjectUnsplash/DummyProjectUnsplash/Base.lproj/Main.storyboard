@@ -23,7 +23,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="319" id="vsG-76-CKy" customClass="UnsplashPhotoCell" customModule="DummyProjectUnsplash" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" rowHeight="319" id="vsG-76-CKy" customClass="UnsplashPhotoCell" customModule="DummyProjectUnsplash" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="319"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vsG-76-CKy" id="1Pz-Wa-WRr">
