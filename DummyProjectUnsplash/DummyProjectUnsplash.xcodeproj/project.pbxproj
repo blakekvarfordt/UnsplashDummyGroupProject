@@ -12,9 +12,10 @@
 		632A4AA32342951C00552017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632A4AA22342951C00552017 /* Assets.xcassets */; };
 		632A4AA62342951C00552017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632A4AA42342951C00552017 /* LaunchScreen.storyboard */; };
 		632A4AB223429F2B00552017 /* UnsplashPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AB123429F2B00552017 /* UnsplashPhoto.swift */; };
-		632A4AB42342AED500552017 /* UnsplashPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AB32342AED500552017 /* UnsplashPhotoController.swift */; };
+		632A4AB42342AED500552017 /* UnsplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AB32342AED500552017 /* UnsplashService.swift */; };
 		632A4AB62342AF8F00552017 /* UnsplashRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AB52342AF8F00552017 /* UnsplashRoute.swift */; };
 		632A4AB82342C14100552017 /* UnsplashTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AB72342C14100552017 /* UnsplashTVC.swift */; };
+		632A4AE82343B13500552017 /* UnsplashPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A4AE72343B13500552017 /* UnsplashPhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		632A4AA52342951C00552017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632A4AA72342951C00552017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632A4AB123429F2B00552017 /* UnsplashPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhoto.swift; sourceTree = "<group>"; };
-		632A4AB32342AED500552017 /* UnsplashPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoController.swift; sourceTree = "<group>"; };
+		632A4AB32342AED500552017 /* UnsplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashService.swift; sourceTree = "<group>"; };
 		632A4AB52342AF8F00552017 /* UnsplashRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRoute.swift; sourceTree = "<group>"; };
 		632A4AB72342C14100552017 /* UnsplashTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashTVC.swift; sourceTree = "<group>"; };
+		632A4AE72343B13500552017 /* UnsplashPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		632A4A9A2342951B00552017 /* DummyProjectUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				632A4AE62343B10800552017 /* CustomCells */,
 				632A4AB0234295FF00552017 /* ViewControllers */,
 				632A4AAF234295B300552017 /* ModelControllers */,
 				632A4AAE234295AD00552017 /* Models */,
@@ -91,7 +94,7 @@
 		632A4AAF234295B300552017 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
-				632A4AB32342AED500552017 /* UnsplashPhotoController.swift */,
+				632A4AB32342AED500552017 /* UnsplashService.swift */,
 				632A4AB52342AF8F00552017 /* UnsplashRoute.swift */,
 			);
 			path = ModelControllers;
@@ -103,6 +106,14 @@
 				632A4AB72342C14100552017 /* UnsplashTVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		632A4AE62343B10800552017 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				632A4AE72343B13500552017 /* UnsplashPhotoCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632A4AB42342AED500552017 /* UnsplashPhotoController.swift in Sources */,
+				632A4AB42342AED500552017 /* UnsplashService.swift in Sources */,
 				632A4AB82342C14100552017 /* UnsplashTVC.swift in Sources */,
 				632A4AB223429F2B00552017 /* UnsplashPhoto.swift in Sources */,
 				632A4A9C2342951B00552017 /* AppDelegate.swift in Sources */,
+				632A4AE82343B13500552017 /* UnsplashPhotoCell.swift in Sources */,
 				632A4AB62342AF8F00552017 /* UnsplashRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

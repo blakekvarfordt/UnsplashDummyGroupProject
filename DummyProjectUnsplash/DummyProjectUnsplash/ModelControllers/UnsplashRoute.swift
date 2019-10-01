@@ -20,7 +20,7 @@ enum UnsplashRoute {
     var path: String {
         switch self {
         case .inspirationalQuote:
-            return "/photos/random"
+            return "/search/photos"
         
         }
     }
@@ -32,7 +32,7 @@ enum UnsplashRoute {
         ]
         switch self {
         case .inspirationalQuote:
-            items.append(URLQueryItem(name: "query", value: "inspirational-quote"))
+            items.append(URLQueryItem(name: "query", value: "inspirational quote"))
             return items
         }
     }
