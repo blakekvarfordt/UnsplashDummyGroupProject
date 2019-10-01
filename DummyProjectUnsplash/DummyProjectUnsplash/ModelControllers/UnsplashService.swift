@@ -26,10 +26,10 @@ class UnsplashService {
             do {
                 var unsplashPhotos: [UnsplashPhoto]!
                 if unsplashRoute == .inspirationalQuote {
+                    unsplashPhotos = try JSONDecoder().decode([UnsplashPhoto].self, from: data)
+                }else {
                     let photoSearchDictionary = try JSONDecoder().decode(PhotoSearchDictionary.self, from: data)
                     unsplashPhotos = photoSearchDictionary.results
-                }else {
-                    unsplashPhotos = try JSONDecoder().decode([UnsplashPhoto].self, from: data)
                 }
                 completion(unsplashPhotos)
             }catch {

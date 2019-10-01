@@ -20,7 +20,7 @@ enum UnsplashRoute {
     var path: String {
         switch self {
         case .inspirationalQuote:
-            return "/search/photos"
+            return "/photos/random"
         
         }
     }
@@ -28,7 +28,7 @@ enum UnsplashRoute {
     var queryItems: [URLQueryItem] {
         var items = [
             URLQueryItem(name: "client_id", value: UnsplashRoute.clientId),
-            URLQueryItem(name: "count", value: "10")
+            URLQueryItem(name: "count", value: "1")
         ]
         switch self {
         case .inspirationalQuote:
